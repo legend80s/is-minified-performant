@@ -1,6 +1,6 @@
 {
   "name": "is-minified-performant",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Checks if JS code is minified or uglified performantly.",
   "main": "index.js",
   "scripts": {
