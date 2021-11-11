@@ -9,6 +9,12 @@ import { isMinified } from 'is-minified-performant';
 ```
 
 ```javascript
+const source2 = `!function(e){function t(r){if(n[r])return n[r].exports;for(var i=[],o=0;o<256;++o)i[o]=(o+256).toString(16).substr(1);e.exports=r}};`;
+
+isMinified(source) // true
+```
+
+```javascript
 const source1 = `
 function main(foo = '') {
 }
@@ -16,12 +22,6 @@ const bar = 1;
 `;
 
 isMinified(source) // false
-```
-
-```javascript
-const source2 = `!function(e){function t(r){if(n[r])return n[r].exports;for(var i=[],o=0;o<256;++o)i[o]=(o+256).toString(16).substr(1);e.exports=r}};`;
-
-isMinified(source) // true
 ```
 
 ## How It Works
