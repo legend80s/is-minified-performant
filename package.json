@@ -1,7 +1,7 @@
 {
   "name": "is-minified-performant",
   "version": "1.0.0",
-  "description": "Checks if JS code is minified or uglified.",
+  "description": "Checks if JS code is minified or uglified performantly.",
   "main": "index.js",
   "scripts": {
     "preversion": "npm test",
@@ -25,7 +25,7 @@
     "uglified"
   ],
   "author": "legend80s",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/legend80s/is-minified-performant/issues"
   },

@@ -13,6 +13,7 @@ Use "Duck Typing" to detect whether source code is minified.
 - no space before `return`
 - no space before and after `if` or `else`
 - no space before and after `=`
+- no space before and after `var`
 
 ## Why the Package
 
@@ -25,8 +26,6 @@ I tried
 - https://www.npmjs.com/package/is-minified-code - use RegExp
 
 but found "Duck Typing" is the most **performant 🚀** and efficient method and the correctness not lower than the above ones.
-
-> Check react.development.js not minified:: the fastest is **is-minified-performant#isMinified**
 
 ### Benchmark Results
 
@@ -41,7 +40,7 @@ is-minified-code#isMinifiedUsingRegexpAndMedian x 881 ops/sec ±2.40% (81 runs s
 Check react.development.js not minified: the fastest is is-minified-performant#isMinified
 ```
 
-1.4 times the second.
+This package's checking un-minified source code speed `1.4 times` the second.
 
 2 Check  [react.production.min.js is](https://unpkg.com/react@17.0.2/umd/react.production.min.js) be minified. `npm run benchmark-minified`:
 
@@ -54,4 +53,4 @@ is-minified-code#isMinifiedUsingRegexpAndMedian x 81,651 ops/sec ±2.14% (87 run
 Check react.production.min.js minified: the fastest is is-minified-performant#isMinified
 ```
 
-17 times the second.
+This package's checking minified source code speed `17 times` the second.
