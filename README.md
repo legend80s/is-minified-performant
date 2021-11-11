@@ -28,9 +28,9 @@ isMinified(source) // false
 
 Use "Duck Typing" to detect whether source code is minified.
 
-> Duck typing in computer programming is an application of the duck test—"If it walks like a duck and it quacks like a duck, then it must be a duck"—to determine whether an object can be used for a particular purpose. With normal typing, suitability is determined by an object's type. In duck typing, an object's suitability is determined by the presence of certain methods and properties, rather than the type of the object itself.
+> Duck typing in computer programming is an application of the duck test—"If it walks like a duck and it quacks like a duck, then it must be a duck"—In duck typing, an object's suitability is determined by the presence of certain methods and properties, rather than the type of the object itself.
 >
-> From https://en.wikipedia.org/wiki/Duck_typing
+> From [wiki/Duck_typing](https://en.wikipedia.org/wiki/Duck_typing)
 
 - no space before `return`
 - no space before and after `if` or `else`
@@ -41,11 +41,11 @@ Use "Duck Typing" to detect whether source code is minified.
 
 I tried
 
-- https://github.com/RaoHai/is-uglified - use acorn parse
+- [is-uglified](https://github.com/RaoHai/is-uglified) - use acorn parse,
 
-- https://www.npmjs.com/package/is-minified - use RegExp
+- [is-minified](https://www.npmjs.com/package/is-minified) - use RegExp,
 
-- https://www.npmjs.com/package/is-minified-code - use RegExp
+- [is-minified-code](https://www.npmjs.com/package/is-minified-code) - use RegExp and sort,
 
 but found "Duck Typing" is the most **performant 🚀** and efficient method and the correctness not lower than the above ones.
 
