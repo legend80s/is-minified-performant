@@ -1,0 +1,38 @@
+{
+  "name": "is-minified-performant",
+  "version": "0.0.0",
+  "description": "Checks if JS code is minified or uglified.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --coverage",
+    "benchmark-minified": "node benchmark/benchmark-minified",
+    "benchmark-not-minified": "node benchmark/benchmark-not-minified"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/legend80s/is-minified-performant.git"
+  },
+  "keywords": [
+    "minified",
+    "minification",
+    "uglify",
+    "minify",
+    "uglified"
+  ],
+  "author": "legend80s",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/legend80s/is-minified-performant/issues"
+  },
+  "homepage": "https://github.com/legend80s/is-minified-performant#readme",
+  "devDependencies": {
+    "@babel/preset-env": "^7.16.0",
+    "@types/jest": "^27.0.2",
+    "babel-jest": "^27.3.1",
+    "benchmark": "^2.1.4",
+    "is-minified": "^0.0.1",
+    "is-minified-code": "^2.0.0",
+    "is-uglified": "^1.0.2",
+    "jest": "^27.3.1"
+  }
+}
