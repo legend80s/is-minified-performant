@@ -1,6 +1,23 @@
 <h1 align="center">is-minified-performant 🚀</h1>
 
-> Checks if JS code is minified or uglified performantly.
+Checks if JS code is minified or uglified performantly.
+
+## Usage
+
+```javascript
+import { isMinified } from 'is-minified-performant';
+
+const source1 = `
+function main(foo = '') {
+}
+const bar = 1;
+`;
+isMinified(source) // false
+
+const source2 = `!function(e){function t(r){if(n[r])return n[r].exports;for(var i=[],o=0;o<256;++o)i[o]=(o+256).toString(16).substr(1);e.exports=r}};`,
+
+isMinified(source) // true
+```
 
 ## How It Works
 
@@ -40,7 +57,7 @@ is-minified-code#isMinifiedUsingRegexpAndMedian x 881 ops/sec ±2.40% (81 runs s
 Check react.development.js not minified: the fastest is is-minified-performant#isMinified
 ```
 
-This package's checking un-minified source code speed `1.4 times` the second.
+This package's checking un-minified source code speed **1.4 times** the second.
 
 2 Check  [react.production.min.js is](https://unpkg.com/react@17.0.2/umd/react.production.min.js) be minified. `npm run benchmark-minified`:
 
@@ -53,4 +70,4 @@ is-minified-code#isMinifiedUsingRegexpAndMedian x 81,651 ops/sec ±2.14% (87 run
 Check react.production.min.js minified: the fastest is is-minified-performant#isMinified
 ```
 
-This package's checking minified source code speed `17 times` the second.
+This package's checking minified source code speed **17 times** the second.

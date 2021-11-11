@@ -23,7 +23,7 @@ const bar = 1;
 const MINIFIED_SOURCE_CODE_LIST = {
   0: `function main(n=""){}const bar=1;`,
 
-  1: `!function(e){function t(r){if(n[r])return n[r].exports;for(var i=[],o=0;o<256;++o)i[o]=(o+256).toString(16).substr(1);e.exports=r}]);`,
+  1: `!function(e){function t(r){if(n[r])return n[r].exports;for(var i=[],o=0;o<256;++o)i[o]=(o+256).toString(16).substr(1);e.exports=r}};`,
 
   2: `/*
 
