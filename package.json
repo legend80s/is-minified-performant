@@ -30,6 +30,7 @@
     "@types/jest": "^27.0.2",
     "babel-jest": "^27.3.1",
     "benchmark": "^2.1.4",
+    "git-commit-msg-linter": "^3.2.8",
     "is-minified": "^0.0.1",
     "is-minified-code": "^2.0.0",
     "is-uglified": "^1.0.2",
