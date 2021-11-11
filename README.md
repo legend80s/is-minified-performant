@@ -39,15 +39,7 @@ Use "Duck Typing" to detect whether source code is minified.
 
 ## Why the Package
 
-I tried
-
-- [is-uglified](https://github.com/RaoHai/is-uglified) - use acorn parse,
-
-- [is-minified](https://www.npmjs.com/package/is-minified) - use RegExp,
-
-- [is-minified-code](https://www.npmjs.com/package/is-minified-code) - use RegExp and sort,
-
-but found "Duck Typing" is the most **performant 🚀** and efficient method and the correctness not lower than the above ones.
+I tried [is-uglified](https://github.com/RaoHai/is-uglified) which uses acorn parse, [is-minified](https://www.npmjs.com/package/is-minified) using RegExp, and [is-minified-code](https://www.npmjs.com/package/is-minified-code) using RegExp and sort, and finally found "Duck Typing" is the most **performant 🚀** and efficient detect method and the correctness not lower than the above ones.
 
 ### Benchmark Results
 
