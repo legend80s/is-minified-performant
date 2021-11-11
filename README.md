@@ -6,15 +6,20 @@ Checks if JS code is minified or uglified performantly.
 
 ```javascript
 import { isMinified } from 'is-minified-performant';
+```
 
+```javascript
 const source1 = `
 function main(foo = '') {
 }
 const bar = 1;
 `;
-isMinified(source) // false
 
-const source2 = `!function(e){function t(r){if(n[r])return n[r].exports;for(var i=[],o=0;o<256;++o)i[o]=(o+256).toString(16).substr(1);e.exports=r}};`,
+isMinified(source) // false
+```
+
+```javascript
+const source2 = `!function(e){function t(r){if(n[r])return n[r].exports;for(var i=[],o=0;o<256;++o)i[o]=(o+256).toString(16).substr(1);e.exports=r}};`;
 
 isMinified(source) // true
 ```
