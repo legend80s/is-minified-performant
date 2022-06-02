@@ -1,6 +1,6 @@
 <h1 align="center">is-minified-performant 🚀</h1>
 
-*NOT PRODUCTION READY*
+![use-pnpm](https://img.shields.io/badge/use-pnpm-green)
 
 <p align="center">Checks if JS code is minified or uglified performantly.</p>
 
