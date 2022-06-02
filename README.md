@@ -1,5 +1,7 @@
 <h1 align="center">is-minified-performant 🚀</h1>
 
+*NOT PRODUCTION READY*
+
 <p align="center">Checks if JS code is minified or uglified performantly.</p>
 
 <h2 align="center">Usage</h2>
