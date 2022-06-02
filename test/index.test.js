@@ -19,6 +19,14 @@ const bar = 1;
   `,
 }
 
+const MINIFIED_SOURCE_CODE_LIST_IN_README = {
+  '-1!==index&&0!==index': '-1 !== index && 0 !== index',
+  'no space before return': 'function(){return sourceCode[index-1]}.toString()',
+  'no space before if': '!function(){if(x){sourceCode[index-1]}}();',
+  'no space before `=`': 'const o=sourceCode[index-1]',
+  'no space before var': '{var o}',
+}
+
 // view-source:https://www.toptal.com/developers/javascript-minifier/
 const MINIFIED_SOURCE_CODE_LIST = {
   0: `function main(n=""){}const bar=1;`,
@@ -74,6 +82,14 @@ describe('isMinified', () => {
     const input = fs.readFileSync(path.join(__dirname, './assets/react.production.min.js'), 'utf-8');
 
     const actual = isMinified(input);
+    const expected = true;
+
+    expect(actual).toEqual(expected);
+  });
+
+  it('MINIFIED_SOURCE_CODE_LIST_IN_README', () => {
+    const input = MINIFIED_SOURCE_CODE_LIST_IN_README;
+    const actual = Object.keys(input).every((key) => isMinified(input[key]));
     const expected = true;
 
     expect(actual).toEqual(expected);

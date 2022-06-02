@@ -12,11 +12,29 @@
  * @returns {boolean}
  */
 exports.isMinified = function isMinified(sourceCode) {
-  return ['return', 'if', 'else', '=', 'var'].some((keyword) => {
+  const keywords = [
+    "return",
+    "if",
+    "else",
+    "===",
+    "==",
+    "!==",
+    "!=",
+    "=",
+    "var",
+    // "let",
+    // "const",
+  ];
+
+  return keywords.some((keyword) => {
     const index = sourceCode.indexOf(keyword);
 
     if (index !== -1 && index !== 0) {
       const charBefore = sourceCode[index - 1];
+
+      // if (!isSpace(charBefore)) {
+      //   console.log('keyword', charBefore+keyword, index, sourceCode.slice(index-20, index+20))
+      // }
 
       return !isSpace(charBefore);
     }

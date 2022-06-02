@@ -31,9 +31,13 @@ isMinified(source) // false
 Use "Duck Typing" to detect whether source code is minified.
 
 - no space before `return`
-- no space before and after `if` or `else`
-- no space before and after `=`
-- no space before and after `var`
+- no space before `if`
+- no space before `===`
+- no space before `==`
+- no space before `!==`
+- no space before `!=`
+- no space before `=`
+- no space before `var`
 
 > Duck typing in computer programming is an application of the duck test—"If it walks like a duck and it quacks like a duck, then it must be a duck"—In duck typing, an object's suitability is determined by the presence of certain methods and properties, rather than the type of the object itself.
 >
